@@ -1,0 +1,5 @@
+# Ignore everything except specific files
+*
+!.gitignore
+!README.md
+!gc5150.cpp
