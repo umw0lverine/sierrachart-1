@@ -6,7 +6,7 @@
 
 #include "sierrachart.h"
 SCDLLName("GC5150 Studies")
-	const SCString ContactInformation = "GC5150, @gc5150 (twitter)";
+const SCString ContactInformation = "GC5150, @gc5150 (twitter)";
 
 SCDateTime GetNow(SCStudyInterfaceRef sc)
 {
@@ -88,8 +88,6 @@ SCSFExport scsf_AutoClearRecentBidAskVolume(SCStudyInterfaceRef sc)
 		Input_AlsoClearCurrentTradedVolume.SetDescription("If enabled this also clears Current Traded Volume along with Recent Bid/Ask Volume");
 		Input_AlsoClearCurrentTradedVolume.SetYesNo(1);
 
-		// During development set this flag to 1, so the DLL can be rebuilt without restarting Sierra Chart. When development is completed, set it to 0 to improve performance.
-		// sc.FreeDLL = 1;
 		return;
 	}
 
